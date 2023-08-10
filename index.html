@@ -10,7 +10,8 @@
 <body>
     <script>
         function verAlerta(){
-            alert('Hola!');
+            Swal.fire('Hola!');
+            event.stopPropagation();
         }
     </script>
     <div id="saludo"><button onclick="verAlerta()">Saludar</button></div>
